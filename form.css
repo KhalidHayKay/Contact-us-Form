@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(100deg, rgb(140, 210, 240), rgb(120, 10, 120));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+.form-container {
+    background: white;
+    height: fit-content;
+    width: 50%;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0 20px 0;
+    background: -webkit-linear-gradient(1turn, rgb(140, 210, 240), rgb(120, 10, 120), rgb(140, 210, 240), rgb(120, 10, 120));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px rgba(128, 128, 128, 0.5);
+    padding: 25px 0 8px 0;
+    outline: none;
+}
+
+input:focus {
+    border-color: rgb(115, 200, 200);
+}
+
+input:focus::placeholder {
+    color: rgb(115, 200, 200);
+    transform: translateY(-12px);
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-family: monospace;
+    color: black;
+    transition: 0.2s;
+}
+
+input#message {
+    padding: 5px 0;
+}
+
+.input-left {
+    float: left;
+    width: 48%;
+}
+
+.input-right {
+    float: right;
+    width: 48%;
+}
+
+.message {
+    float: right;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.submit {
+    width: 25%;
+    border: none;
+    padding: 7px 0;
+    background: linear-gradient(to right, rgb(140, 210, 240), rgb(120, 10, 120));
+    color: white;
+}
